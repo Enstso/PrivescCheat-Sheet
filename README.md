@@ -63,7 +63,7 @@ Le format cronjob :
 
 #id|m=minutes|h =heure|dom=jour du mois|mon=mois|dow = jour de la semaine|user=qui l'executera|commande
 
-Si nous avons des droits d'écriture et que le propriétaire et root ou une autre personne, nous pouvons modifer le conten du fichier pour récupérer un shell.
+Si nous avons des droits d'écriture et que le propriétaire est root ou une autre personne, nous pouvons modifer le contenu du fichier pour récupérer un shell.
 
 
 ### Exploiter la variable $PATH 
@@ -78,8 +78,6 @@ Comme pour tout fichier SUID, il exécutera cette commande avec les mêmes privi
 
 ### Exploitation /etc/shadow
 
-
-Ce fichier est généralement visible quer par l'utilisateur.
 
 Si nous pouvons voir son contenu, nous pouvons récupérer les hachs et les cracker via john the ripper.
 
